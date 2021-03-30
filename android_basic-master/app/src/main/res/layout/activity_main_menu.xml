@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addacc"
+    tools:context=".MainMenu">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_pressed"
+            android:id="@+id/lay_nama"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nama : " />
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:text="Name" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_pay"
+            android:id="@+id/lay_email"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email Address : " />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Email Address"
+                android:textAlignment="textEnd"
+                android:gravity="end" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:id="@+id/lay_nohp"
+            android:background="@drawable/button_history"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nomor HP : " />
+
+            <TextView
+                android:id="@+id/txt_nohp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:text="Hp Number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:id="@+id/lay_noktp"
+            android:background="@drawable/button_merah"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Nomor KTP : " />
+
+            <TextView
+                android:id="@+id/txt_noktp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:text="ID Number"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_weight="1"
+                android:text="Lokasi Gate : " />
+
+            <TextView
+                android:id="@+id/txt_gate"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="none"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_weight="1"
+                android:text="Harga : " />
+
+            <TextView
+                android:id="@+id/txt_hargatol"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:text="0"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAlignment="textEnd"
+                android:text="Saldo Payment : "
+                android:gravity="end" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAlignment="textEnd"
+                android:text=""
+                android:gravity="end" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:text="Rp. "
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/txt_saldopayment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="0"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textAlignment="textEnd"
+                android:text="Saldo Pulsa Provider : "
+                android:gravity="end" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textAlignment="textEnd"
+                android:text=""
+                android:gravity="end" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:text="Rp. "
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/txt_saldoprovider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="0"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/button_history"
+            android:text="Lihat History Pembayaran"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/button_merah"
+            android:text="Logout"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addacc"
+    tools:context=".Detiltransaksi">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Detil Transaksi" />
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_pressed"
+        android:id="@+id/lay_nama"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Nomor HP : " />
+
+        <TextView
+            android:id="@+id/txt_nohp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="Nomor Hp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_pay"
+        android:id="@+id/lay_email"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Gate Tol : " />
+
+        <TextView
+            android:id="@+id/txt_gate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Name Gate Tol"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:id="@+id/lay_nohp"
+        android:background="@drawable/button_history"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tanggal Transaksi : " />
+
+        <TextView
+            android:id="@+id/txt_tanggaltrans"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="00/00/0000" />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:id="@+id/lay_harga"
+            android:background="@drawable/button_merah"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Harga : " />
+
+            <TextView
+                android:id="@+id/txt_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:text="0" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

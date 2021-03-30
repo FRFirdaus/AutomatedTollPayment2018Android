@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">atp</string>
+    <string-array name="nominal">
+        <item>10000</item>
+        <item>20000</item>
+        <item>50000</item>
+        <item>100000</item>
+    </string-array>
+</resources>
